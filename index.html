@@ -30,7 +30,6 @@
       flex-direction: column;
     }
 
-    /* Header */
     header {
       background: var(--white);
       border-bottom: 1.5px solid var(--border);
@@ -79,7 +78,6 @@
       border-radius: 20px;
     }
 
-    /* Hero */
     .hero {
       background: var(--white);
       border-bottom: 1.5px solid var(--border);
@@ -131,7 +129,6 @@
       line-height: 1.6;
     }
 
-    /* Main content */
     main {
       max-width: 700px;
       margin: 0 auto;
@@ -149,7 +146,6 @@
       padding-left: 2px;
     }
 
-    /* Proxy cards */
     .cards {
       display: flex;
       flex-direction: column;
@@ -221,13 +217,6 @@
       gap: 10px;
     }
 
-    .meta-dot {
-      width: 3px;
-      height: 3px;
-      background: var(--border);
-      border-radius: 50%;
-    }
-
     .card-action {
       background: var(--green);
       color: white;
@@ -242,7 +231,6 @@
 
     .card:hover .card-action { background: var(--green-dark); }
 
-    /* Info block */
     .info-block {
       background: var(--white);
       border: 1.5px solid var(--border);
@@ -287,7 +275,6 @@
       margin-top: 1px;
     }
 
-    /* Footer */
     footer {
       margin-top: auto;
       border-top: 1.5px solid var(--border);
@@ -323,7 +310,7 @@
 <div class="hero">
   <div class="hero-eyebrow">Доступно сейчас</div>
   <h1>Telegram прокси</h1>
-  <p>Четыре сервера для стабильного подключения. Нажмите на карточку — Telegram откроется автоматически.</p>
+  <p>Два сервера для стабильного подключения. Нажмите на карточку — Telegram откроется автоматически.</p>
 </div>
 
 <main>
@@ -331,7 +318,7 @@
 
   <div class="cards">
 
-    <a class="card" href="tg://proxy?server=204.168.226.57&port=8732&secret=ee104462821249bd7ac519130220c25d0979616e6465782e7275">
+    <a class="card" href="tg://proxy?server=37.233.84.24&port=443&secret=eea03a97b15e5140cd3a4226645cdc5efd79616e6465782e7275">
       <div class="card-left">
         <div class="card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -342,16 +329,16 @@
           </svg>
         </div>
         <div class="card-info">
-          <div class="card-title">Сервер 1 — MTProto</div>
+          <div class="card-title">Сервер 1 — MTProto FakeTLS</div>
           <div class="card-meta">
-            <span>204.168.226.57 · 8732</span>
+            <span>37.233.84.24 · 443</span>
           </div>
         </div>
       </div>
       <div class="card-action">Подключить</div>
     </a>
 
-    <a class="card" href="tg://proxy?server=bella-cook.com&port=8443&secret=d33f64b4972fccdaaf6b9d4bc76c4ff9">
+    <a class="card" href="tg://proxy?server=37.233.81.233&port=443&secret=ee5c73f9326ebc5a3d415c650662a86ee577622e7275">
       <div class="card-left">
         <div class="card-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -362,49 +349,9 @@
           </svg>
         </div>
         <div class="card-info">
-          <div class="card-title">Сервер 2 — MTProto</div>
+          <div class="card-title">Сервер 2 — MTProto FakeTLS</div>
           <div class="card-meta">
-            <span>bella-cook.com · 8443</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-action">Подключить</div>
-    </a>
-
-    <a class="card" href="tg://proxy?server=mtproto-de2.nolimited.space&port=443&secret=eebdfa6443f1b57d30b232b9d1a05fb11c766b2e7275">
-      <div class="card-left">
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <rect x="3" y="3" width="8" height="8" rx="2" fill="#00A046" opacity="0.4"/>
-            <rect x="13" y="3" width="8" height="8" rx="2" fill="#00A046" opacity="0.7"/>
-            <rect x="3" y="13" width="8" height="8" rx="2" fill="#00A046"/>
-            <rect x="13" y="13" width="8" height="8" rx="2" fill="#00A046"/>
-          </svg>
-        </div>
-        <div class="card-info">
-          <div class="card-title">Сервер 3 — MTProto FakeTLS</div>
-          <div class="card-meta">
-            <span>nolimited.space · 443</span>
-          </div>
-        </div>
-      </div>
-      <div class="card-action">Подключить</div>
-    </a>
-
-    <a class="card" href="tg://proxy?server=2.27.22.13&port=443&secret=770c63621136701517a7e0d4c2643600">
-      <div class="card-left">
-        <div class="card-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <rect x="3" y="3" width="8" height="8" rx="2" fill="#00A046" opacity="0.5"/>
-            <rect x="13" y="3" width="8" height="8" rx="2" fill="#00A046" opacity="0.9"/>
-            <rect x="3" y="13" width="8" height="8" rx="2" fill="#00A046" opacity="0.7"/>
-            <rect x="13" y="13" width="8" height="8" rx="2" fill="#00A046"/>
-          </svg>
-        </div>
-        <div class="card-info">
-          <div class="card-title">Сервер 4 — MTProto</div>
-          <div class="card-meta">
-            <span>2.27.22.13 · 443</span>
+            <span>37.233.81.233 · 443</span>
           </div>
         </div>
       </div>
